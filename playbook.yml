@@ -1,11 +1,15 @@
-
 - hosts: all
 
   gather_facts: true
 
   become: true
 
+  vars:
+
+    ansible_python_interpreter: /usr/bin/python3
+
   roles:
 
     - docker
 
+    - docker_network

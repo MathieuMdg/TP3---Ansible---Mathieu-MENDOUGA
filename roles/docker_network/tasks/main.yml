@@ -1,2 +1,7 @@
 ---
-# tasks file for roles/docker_network
+- name: Create Docker network
+  community.docker.docker_network:
+    name: app_network
+    state: present
+  vars:
+    ansible_python_interpreter: /opt/docker_venv/bin/python
