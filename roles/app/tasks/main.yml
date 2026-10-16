@@ -1,2 +1,16 @@
 ---
-# tasks file for roles/app
+- name: Launch API
+  community.docker.docker_container:
+    name: "{{ api_container }}"
+    image: "{{ api_image }}"
+    pull: true
+    state: started
+    restart_policy: unless-stopped
+    networks:
+      - name: "{{ network_name }}"
+    env:
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://{{ db_container }}:5432/{{ db_name }}"
+      SPRING_DATASOURCE_USERNAME: "{{ db_user }}"
+      SPRING_DATASOURCE_PASSWORD: "{{ db_password }}"
+  vars:
+    ansible_python_interpreter: "{{ docker_python }}"
