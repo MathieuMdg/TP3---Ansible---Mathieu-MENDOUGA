@@ -1,20 +1,5 @@
 # TP3 : Ansible, Docker et déploiement d'application
 
-Déploiement automatisé d'une application trois conteneurs (base de données PostgreSQL, API Spring Boot, proxy httpd) sur un serveur distant, avec Ansible et Docker.
-
-## Sommaire
-
-1. [Environnement](#environnement)
-2. [Structure du projet](#structure-du-projet)
-3. [Question 3-1 : inventaire et commandes de base](#question-3-1--inventaire-et-commandes-de-base)
-4. [Question 3-2 : playbook et rôles](#question-3-2--playbook-et-rôles)
-5. [Problème rencontré : interpréteurs Python](#problème-rencontré--interpréteurs-python)
-6. [Déploiement de l'application](#déploiement-de-lapplication)
-7. [Question 3-3 : configuration des tâches docker_container](#question-3-3--configuration-des-tâches-docker_container)
-8. [Question de sécurité : déploiement automatique](#question-de-sécurité--déploiement-automatique)
-9. [Lancer le déploiement](#lancer-le-déploiement)
-10. [État d'avancement](#état-davancement)
-
 ## Environnement
 
 | Élément | Valeur |
