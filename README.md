@@ -1,4 +1,4 @@
-# TP3 - Ansible - Mathieu MENDOUGA
+# TP3: Ansible, Docker and application deployment
 
 ## Environment
 
