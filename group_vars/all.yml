@@ -2,9 +2,9 @@
 docker_python: /opt/docker_venv/bin/python
 network_name: app_network
 
-db_image: mathieumdg/my-database:latest
-api_image: mathieumdg/my-backend:latest
-proxy_image: mathieumdg/my-httpd:latest
+db_image: mathieumdg/github-actions-my-database:latest
+api_image: mathieumdg/github-actions-my-backend:latest
+proxy_image: mathieumdg/github-actions-my-httpd:latest
 
 db_container: database
 api_container: backend
